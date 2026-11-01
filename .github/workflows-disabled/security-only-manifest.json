@@ -1,0 +1,27 @@
+{
+  "policy": "Security-only Actions; retained security runs only on new pushes within original branch scope. Nonsecurity workflows archived reversibly.",
+  "date": "2026-11-01",
+  "original_head": "c3f1554a37f26ccdda44bc598a39a883a6ffd881",
+  "branch": "typescript",
+  "workflows": [
+    {
+      "source": ".github/workflows/main.yml",
+      "backup": ".github/workflows-disabled/main.yml",
+      "original_blob": "b8ae81b3b7d585ff0954359f4e7b3454ddf3932f",
+      "action": "disable_nonsecurity"
+    },
+    {
+      "source": ".github/workflows/size-limit.yml",
+      "backup": ".github/workflows-disabled/size-limit.yml",
+      "original_blob": "7738ef03f5987dcd9bc98178a562e429b7d3eacb",
+      "action": "disable_nonsecurity"
+    },
+    {
+      "source": ".github/workflows/test.yml",
+      "backup": ".github/workflows-disabled/test.yml",
+      "original_blob": "67fe28c689eee169206c85eb834f0aeb73e43676",
+      "action": "disable_nonsecurity"
+    }
+  ],
+  "restore": "Restore original files from backups to .github/workflows, or revert this commit. Original security YAML is also backed up."
+}
