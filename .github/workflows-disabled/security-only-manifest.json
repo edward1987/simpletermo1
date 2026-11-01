@@ -1,0 +1,33 @@
+{
+  "policy": "Security-only Actions; retained security runs only on new pushes within original branch scope. Nonsecurity workflows archived reversibly.",
+  "date": "2026-11-01",
+  "original_head": "3aac3c4dc0175e39147987fdc08cf18f75ccb457",
+  "branch": "next",
+  "workflows": [
+    {
+      "source": ".github/workflows/hacs.yml",
+      "backup": ".github/workflows-disabled/hacs.yml",
+      "original_blob": "c6d16985e4f388572b6add055151de363838b110",
+      "action": "disable_nonsecurity"
+    },
+    {
+      "source": ".github/workflows/release.yml",
+      "backup": ".github/workflows-disabled/release.yml",
+      "original_blob": "419859dbd987688fce044ac25c1e4bca54b2988f",
+      "action": "disable_nonsecurity"
+    },
+    {
+      "source": ".github/workflows/size-limit.yml",
+      "backup": ".github/workflows-disabled/size-limit.yml",
+      "original_blob": "7738ef03f5987dcd9bc98178a562e429b7d3eacb",
+      "action": "disable_nonsecurity"
+    },
+    {
+      "source": ".github/workflows/test.yml",
+      "backup": ".github/workflows-disabled/test.yml",
+      "original_blob": "c6279d87c509d14b5fae7500339eba530b692748",
+      "action": "disable_nonsecurity"
+    }
+  ],
+  "restore": "Restore original files from backups to .github/workflows, or revert this commit. Original security YAML is also backed up."
+}
